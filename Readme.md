@@ -3,7 +3,7 @@
 
 Tips and Tricks, especially in the programming world, can be very useful. Sometimes a little hack can be both time and life-saving. A minor shortcut or add-on can sometimes prove to be a Godsend and can be a real productivity booster. So, here are some of my favourite tips and tricks that I have used and compiled together in the form of this article. Some may be fairly known and some may be new but I am sure they would come in pretty handy the next time you work on a Data Analysis project.
 
-### 1.  Profiling the pandas dataframe
+## 1.  Profiling the pandas dataframe
 
 **Profiling** is a process that helps us in understanding our data  and  [**Pandas**](https://github.com/pandas-profiling/pandas-profiling)[**Profiling**](https://github.com/pandas-profiling/pandas-profiling)  is python package which does exactly that.  It is a simple and fast way to perform exploratory data analysis of a Pandas Dataframe.  The pandas`df.describe()`and  `df.info()functions` are normally used as a first step in the EDA process. However, it only gives a very basic overview of the data and doesn’t help much in the case of large data sets. The Pandas Profiling function, on the other hand, extends the pandas DataFrame  with`df.profile_report()`  for quick data analysis. It displays a lot of information with a single line of code and that too in an interactive HTML report.
 
@@ -29,7 +29,7 @@ Let’s use the age-old titanic dataset to demonstrate the capabilities of the v
  import pandas_profiling
 ```
 
-#To display the report in a Jupyter notebook, run
+To display the report in a Jupyter notebook, run
 ```
  df.profile_report()
 ```
@@ -52,7 +52,7 @@ Refer the  [documentation](https://pandas-profiling.github.io/pandas-profiling/d
 
 ----------
 
-### 2.  Bringing Interactivity to pandas plots
+## 2.  Bringing Interactivity to pandas plots
 
 **Pandas**  has a built-in `.plot()`  function as part of the DataFrame class.However, the visualisations rendered with this function aren't interactive and that makes it less appealing. On the contrary, the ease to plot charts with `pandas.DataFrame.plot()`  function also cannot be ruled out.  What if we could plot interactive plotly like charts with pandas without having to make major modifications to the code? Well, you can actually do that with the help of [**Cufflinks**](https://github.com/santosjorge/cufflinks)  library**.**
 
@@ -92,7 +92,7 @@ The visualisation on the right shows the static chart while the left chart is in
 
 ----------
 
-### 3. A Dash of Magic
+## 3. A Dash of Magic
 
 **Magic commands**  are a set of convenient functions in Jupyter Notebooks that are designed to solve some of the common problems in standard data analysis. You can see all available magics with the help of  `%lsmagic`.
 
@@ -149,7 +149,7 @@ The %%latex function renders the cell contents as LaTeX. It is  useful  for writ
 
 ----------
 
-### 4. Finding and Eliminating Errors
+## 4. Finding and Eliminating Errors
 
 The  **interactive debugger**  is also a magic function but I have given it a category of its own. If you get an exception while running the code cell, type  `%debug`  in a new line and run it. This opens an interactive debugging environment which brings you to the position where the exception has occurred. You can also check for values of variables assigned in the program and also perform operations here. To exit the debugger hit  `q`.
 
@@ -157,7 +157,7 @@ The  **interactive debugger**  is also a magic function but I have given it a ca
 
 ----------
 
-### 5. Printing can be pretty too
+## 5. Printing can be pretty too
 
 If you want to produce  aesthetically  pleasing representations of your data structures,  [**pprint**](https://docs.python.org/2/library/pprint.html)  is the go-to module. It is especially useful when printing dictionaries or JSON data. Let’s have a look at an example which uses both  `print`  and  `pprint`  to display the output.
 
@@ -167,7 +167,7 @@ If you want to produce  aesthetically  pleasing representations of your data str
 
 ----------
 
-### 6. Making the Notes stand out.
+## 6. Making the Notes stand out.
 
 We can use alert/Note boxes in your Jupyter Notebooks to highlight something important or anything that needs to stand out. The colour of the note depends upon the type of alert that is specified. Just add any or all of the following codes in a cell that needs to be highlighted.
 
@@ -205,7 +205,7 @@ It is good to avoid red boxes but can be used to alert users to not delete some 
 
 ----------
 
-### 7. Printing all the outputs of a cell
+## 7. Printing all the outputs of a cell
 
 Consider a cell of Jupyter Notebook containing the following lines of code:
 
@@ -234,7 +234,7 @@ InteractiveShell.ast_node_interactivity = "**last_expr**"
 
 ----------
 
-### 8. Running python scripts with the ‘i’ option.
+## 8. Running python scripts with the ‘i’ option.
 
 A typical way of running a python script from the command line is:  `python hello.py.`  However, if you add an additional  `-i` while running the same script e.g  `python -i hello.py`  it offers more advantages. Let’s see how.
 
@@ -253,7 +253,7 @@ _The original_ [_source_](http://www.bnikolic.co.uk/blog/python-running-cline.ht
 
 ----------
 
-### 9. Commenting out code automatically
+## 9. Commenting out code automatically
 
 `Ctrl/Cmd + /`  comments out selected lines in the cell by automatically. Hitting the combination again will uncomment the same line of code.
 
@@ -261,7 +261,7 @@ _The original_ [_source_](http://www.bnikolic.co.uk/blog/python-running-cline.ht
 
 ----------
 
-### 10. To delete is human, to restore divine
+## 10. To delete is human, to restore divine
 
 Have you ever accidentally deleted a cell in a Jupyter Notebook? If yes then here is a shortcut which can undo that delete action.
 
