@@ -10,20 +10,20 @@ Statistics computer by Pandas Profiling package.
 
 #### Installation
 
-    pip install pandas-profiling  
-    or  
-    conda install -c anaconda pandas-profiling`
+pip install pandas-profiling  
+or  
+conda install -c anaconda pandas-profiling`
 
 #### Usage
 
 Let’s use the age-old titanic dataset to demonstrate the capabilities of the versatile python profiler.
 
-       #importing the necessary packages  
-         import pandas as pd  
-         import pandas_profiling
+#importing the necessary packages  
+ import pandas as pd  
+ import pandas_profiling
             
-       #To display the report in a Jupyter notebook, run
-        df.profile_report()
+#To display the report in a Jupyter notebook, run
+ df.profile_report()
 
 This single line of code is all that you need to display the data profiling report in a Jupyter notebook. The report is pretty detailed including charts wherever necessary.
 
@@ -31,8 +31,8 @@ This single line of code is all that you need to display the data profiling repo
 
 The report can also be exported into an  **interactive HTML file**  with the following code.
 
-    profile = df.profile_report(title='Pandas Profiling Report')  
-    profile.to_file(outputfile="Titanic data profiling.html")
+ profile = df.profile_report(title='Pandas Profiling Report')  
+ profile.to_file(outputfile="Titanic data profiling.html")
 
 ![](https://cdn-images-1.medium.com/max/800/1*Oms7fW4rNlU0NaMUf9qYmA.gif)
 
@@ -52,19 +52,16 @@ pip install plotly # Plotly is a pre-requisite before installing cufflinks
 pip install cufflinks
 
 #### Usage
-
-    #importing Pandas   
-    import pandas as pd  
-    #importing plotly and cufflinks in offline mode  
-    import cufflinks as cf
-    
-    import plotly.offline  
-    cf.go_offline()  
-    cf.set_config_file(offline=False, world_readable=True)
+  
+import pandas as pd  #importing Pandas 
+import cufflinks as cf #importing plotly and cufflinks in offline mode  
+import plotly.offline  
+cf.go_offline()  
+cf.set_config_file(offline=False, world_readable=True)
 
 Time to see the magic unfold with the Titanic dataset.
 
-    df.iplot()
+df.iplot()
 
 ![](https://cdn-images-1.medium.com/max/600/1*Qqsl_6xGeccaTU1AjAibrA.gif)
 
@@ -96,9 +93,9 @@ Let’s look at some of them that might be useful in common data analysis tasks:
 
 Consider a python script  `file.py`  with the following content:
 
-    #file.py  
-    def foo(x):  
-        return x
+#file.py  
+def foo(x):  
+    return x
 
 Using  **%pastebin**  in Jupyter Notebook generates a pastebin url.
 
