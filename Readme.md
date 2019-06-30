@@ -54,7 +54,7 @@ Refer the  [documentation](https://pandas-profiling.github.io/pandas-profiling/d
 
 ## 2.  Bringing Interactivity to pandas plots
 
-**Pandas**  has a built-in `.plot()`  function as part of the DataFrame class.However, the visualisations rendered with this function aren't interactive and that makes it less appealing. On the contrary, the ease to plot charts with `pandas.DataFrame.plot()`  function also cannot be ruled out.  What if we could plot interactive plotly like charts with pandas without having to make major modifications to the code? Well, you can actually do that with the help of [**Cufflinks**](https://github.com/santosjorge/cufflinks)  library**.**
+**Pandas**  has a built-in `.plot()`  function as part of the DataFrame class.However, the visualisations rendered with this function aren't interactive and that makes it less appealing. On the contrary, the ease to plot charts with `pandas.DataFrame.plot()`  function also cannot be ruled out.  What if we could plot interactive plotly like charts with pandas without having to make major modifications to the code? Well, you can actually do that with the help of [**Cufflinks**](https://github.com/santosjorge/cufflinks) library.
 
 Cufflinks library binds the power of  [**plotly**](http://www.plot.ly/)  with the flexibility of  [pandas](http://pandas.pydata.org/)  for easy plotting. Let’s now see how we can install the library and get it working in pandas.
 
